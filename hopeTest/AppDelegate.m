@@ -17,6 +17,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSLog(@"%@", ABSOLUTE_PATH(@"cache.db"));
+    
+    NSArray *array = @[@"123",@"345",@"456"];
+    NSString *tableName = @"array_table";
+    [[HPCacheService cacheManger] cacheArray:array withId:@"arrayId1" intoTable:tableName];
+    
+    NSArray *getArray = [[HPCacheService cacheManger] getArrayWithId:@"arrayId1" fromTable:tableName];
+    NSLog(@"%@", getArray);
+    
+    NSString *dicTable = @"dic_table";
+    NSDictionary *cacheDic = @{@"username":@"lmf", @"password":@"123456"};
+    [[HPCacheService cacheManger] cacheDictionay:cacheDic withId:@"dicId1" intoTable:dicTable];
+    
+    NSDictionary *infoDic = [[HPCacheService cacheManger] getDictionaryWithId:@"dicId1" fromTable:dicTable];
+    NSLog(@"%@", infoDic);
+    
+    return YES;
     NSString *url = @"";
     [[HPHttpService shareManager] uploadFileWithContentUrl:url withParam:nil withFilePath:ABSOLUTE_PATH(@"photo.zip") withProgress:^(CGFloat progress) {
         NSLog(@"%g", progress);

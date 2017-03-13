@@ -26,7 +26,7 @@
 
 - (BOOL)isTableExists:(NSString *)tableName;
 
-- (void)clearTable:(NSString *)tableName with:(NSInteger)state;
+- (void)clearTable:(NSString *)tableName with:(BOOL)state;
 
 - (void)close;
 

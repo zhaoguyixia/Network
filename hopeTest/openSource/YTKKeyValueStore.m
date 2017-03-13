@@ -10,7 +10,6 @@
 #import "FMDatabase.h"
 #import "FMDatabaseAdditions.h"
 #import "FMDatabaseQueue.h"
-#import "CustomSmallAlert.h"
 
 #ifdef DEBUG
 #define debugLog(...)    NSLog(__VA_ARGS__)
@@ -76,6 +75,12 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     return [self initDBWithName:DEFAULT_DB_NAME];
 }
 
+/**
+ init database with database name
+
+ @param dbName database name
+ @return self
+ */
 - (id)initDBWithName:(NSString *)dbName {
     self = [super init];
     if (self) {
@@ -89,6 +94,12 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     return self;
 }
 
+/**
+ init database with database absolute path
+
+ @param dbPath database path
+ @return self
+ */
 - (id)initWithDBWithPath:(NSString *)dbPath {
     self = [super init];
     if (self) {
@@ -101,6 +112,11 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     return self;
 }
 
+/**
+ create table with tableName, and there are three keys id,json and createTime
+
+ @param tableName tableName
+ */
 - (void)createTableWithName:(NSString *)tableName {
     if ([YTKKeyValueStore checkTableName:tableName] == NO) {
         return;
@@ -115,6 +131,12 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     }
 }
 
+/**
+ judge if table exists through tableName
+
+ @param tableName tableName
+ @return yes or no
+ */
 - (BOOL)isTableExists:(NSString *)tableName{
     if ([YTKKeyValueStore checkTableName:tableName] == NO) {
         return NO;
@@ -129,7 +151,13 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     return result;
 }
 
-- (void)clearTable:(NSString *)tableName with:(NSInteger)state{
+/**
+ clear table through tableName
+
+ @param tableName tableName
+ @param state control if show result that if clear table successful
+ */
+- (void)clearTable:(NSString *)tableName with:(BOOL)state{
     if ([YTKKeyValueStore checkTableName:tableName] == NO) {
         return;
     }
@@ -143,28 +171,22 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     }
     else
     {
-        if ([tableName isEqualToString:@"ExerciseDailyData"] && state == 1)
+        if ([tableName isEqualToString:@"ExerciseDailyData"] && state)
         {            
-            [self startShowWith:@"缓存清除成功"];
+            NSLog(@"缓存清除成功");
         }
         
     }
 }
 
-- (void)startShowWith:(NSString *)tishi
-{
-    CustomSmallAlert *alert = [CustomSmallAlert shareManager];
-    //    alert.tishiL.text = tishi;
-    [alert config:tishi];
-    [[UIApplication sharedApplication].keyWindow addSubview:alert];
-    [self performSelector:@selector(dismissAlert) withObject:nil afterDelay:2.0];
-}
-- (void)dismissAlert
-{
-    CustomSmallAlert *alert = [CustomSmallAlert shareManager];
-    [alert dismiss];
-}
+/**
+ put id, json, createTime into table, originTime is not request
 
+ @param object data you want to put
+ @param objectId id
+ @param tableName which table you want to put
+ @param originTime when time you put
+ */
 - (void)putObject:(id)object withId:(NSString *)objectId intoTable:(NSString *)tableName originTime:(NSNumber *)originTime {
     if ([YTKKeyValueStore checkTableName:tableName] == NO) {
         return;
@@ -192,6 +214,13 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     }
 }
 
+/**
+ get data(object) from database through id and tableName
+
+ @param objectId id
+ @param tableName tableName
+ @return data(id)
+ */
 - (id)getObjectById:(NSString *)objectId fromTable:(NSString *)tableName {
     YTKKeyValueItem * item = [self getYTKKeyValueItemById:objectId fromTable:tableName];
     if (item) {
@@ -234,6 +263,13 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     }
 }
 
+/**
+ put string data into database
+
+ @param string data than you cache
+ @param stringId id
+ @param tableName tableName
+ */
 - (void)putString:(NSString *)string withId:(NSString *)stringId intoTable:(NSString *)tableName {
     if (string == nil) {
         debugLog(@"error, string is nil");
@@ -243,6 +279,13 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     [self putObject:@[string] withId:stringId intoTable:tableName originTime:nil];
 }
 
+/**
+ get string from database
+
+ @param stringId id
+ @param tableName tableName
+ @return string
+ */
 - (NSString *)getStringById:(NSString *)stringId fromTable:(NSString *)tableName {
     NSArray * array = [self getObjectById:stringId fromTable:tableName];
     if (array && [array isKindOfClass:[NSArray class]]) {
@@ -299,6 +342,12 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     return result;
 }
 
+/**
+ delete data through id
+
+ @param objectId id
+ @param tableName tableName
+ */
 - (void)deleteObjectById:(NSString *)objectId fromTable:(NSString *)tableName {
     if ([YTKKeyValueStore checkTableName:tableName] == NO) {
         return;
@@ -313,6 +362,12 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     }
 }
 
+/**
+ delete data throught idArray
+
+ @param objectIdArray a lot of id
+ @param tableName tableName
+ */
 - (void)deleteObjectsByIdArray:(NSArray *)objectIdArray fromTable:(NSString *)tableName {
     if ([YTKKeyValueStore checkTableName:tableName] == NO) {
         return;
@@ -337,6 +392,12 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     }
 }
 
+/**
+ delete data which id contains prefix
+
+ @param objectIdPrefix id prefix
+ @param tableName tableName
+ */
 - (void)deleteObjectsByIdPrefix:(NSString *)objectIdPrefix fromTable:(NSString *)tableName {
     if ([YTKKeyValueStore checkTableName:tableName] == NO) {
         return;

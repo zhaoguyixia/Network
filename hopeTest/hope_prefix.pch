@@ -19,6 +19,7 @@
 
 #import "HTTPConfigHead.h"
 #import "HPHttpService.h"
+#import "HPCacheService.h"
 
 #endif
 

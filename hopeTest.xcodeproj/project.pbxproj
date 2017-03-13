@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EFB52EA1E76775700ED4DE5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB52DE1E76775700ED4DE5 /* FMDatabase.m */; };
+		4EFB52EB1E76775700ED4DE5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB52E01E76775700ED4DE5 /* FMDatabaseAdditions.m */; };
+		4EFB52EC1E76775700ED4DE5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB52E21E76775700ED4DE5 /* FMDatabasePool.m */; };
+		4EFB52ED1E76775700ED4DE5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB52E41E76775700ED4DE5 /* FMDatabaseQueue.m */; };
+		4EFB52EE1E76775700ED4DE5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB52E71E76775700ED4DE5 /* FMResultSet.m */; };
+		4EFB52EF1E76775700ED4DE5 /* YTKKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB52E91E76775700ED4DE5 /* YTKKeyValueStore.m */; };
+		4EFB52F11E7679A100ED4DE5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFB52F01E7679A100ED4DE5 /* libsqlite3.0.tbd */; };
+		4EFB52F61E768E3F00ED4DE5 /* HPCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFB52F51E768E3F00ED4DE5 /* HPCacheService.m */; };
 		9EB0867D42D4539CE423B4FD /* libPods-hopeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B338AE5011453501BED558B8 /* libPods-hopeTest.a */; };
 		C41A48851E727ECF00ACE211 /* HPUserDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C41A48841E727ECF00ACE211 /* HPUserDataRequest.m */; };
 		C48074EF1E6FDE2700DEAFE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C48074EE1E6FDE2700DEAFE5 /* main.m */; };
@@ -39,6 +47,22 @@
 
 /* Begin PBXFileReference section */
 		453222F99FC193A914ED699B /* Pods-hopeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hopeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hopeTest/Pods-hopeTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4EFB52DD1E76775700ED4DE5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		4EFB52DE1E76775700ED4DE5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		4EFB52DF1E76775700ED4DE5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		4EFB52E01E76775700ED4DE5 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		4EFB52E11E76775700ED4DE5 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		4EFB52E21E76775700ED4DE5 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		4EFB52E31E76775700ED4DE5 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		4EFB52E41E76775700ED4DE5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		4EFB52E51E76775700ED4DE5 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		4EFB52E61E76775700ED4DE5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		4EFB52E71E76775700ED4DE5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		4EFB52E81E76775700ED4DE5 /* YTKKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKKeyValueStore.h; sourceTree = "<group>"; };
+		4EFB52E91E76775700ED4DE5 /* YTKKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKKeyValueStore.m; sourceTree = "<group>"; };
+		4EFB52F01E7679A100ED4DE5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4EFB52F41E768E3F00ED4DE5 /* HPCacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCacheService.h; sourceTree = "<group>"; };
+		4EFB52F51E768E3F00ED4DE5 /* HPCacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCacheService.m; sourceTree = "<group>"; };
 		B338AE5011453501BED558B8 /* libPods-hopeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hopeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40E22D21E70F2FD00EE5BF4 /* HTTPConfigHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConfigHead.h; sourceTree = "<group>"; };
 		C41A48831E727ECF00ACE211 /* HPUserDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPUserDataRequest.h; sourceTree = "<group>"; };
@@ -71,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EFB52F11E7679A100ED4DE5 /* libsqlite3.0.tbd in Frameworks */,
 				9EB0867D42D4539CE423B4FD /* libPods-hopeTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +117,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EFB52DB1E76775700ED4DE5 /* openSource */ = {
+			isa = PBXGroup;
+			children = (
+				4EFB52DC1E76775700ED4DE5 /* FMDB */,
+				4EFB52E81E76775700ED4DE5 /* YTKKeyValueStore.h */,
+				4EFB52E91E76775700ED4DE5 /* YTKKeyValueStore.m */,
+			);
+			path = openSource;
+			sourceTree = "<group>";
+		};
+		4EFB52DC1E76775700ED4DE5 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				4EFB52DD1E76775700ED4DE5 /* FMDatabase.h */,
+				4EFB52DE1E76775700ED4DE5 /* FMDatabase.m */,
+				4EFB52DF1E76775700ED4DE5 /* FMDatabaseAdditions.h */,
+				4EFB52E01E76775700ED4DE5 /* FMDatabaseAdditions.m */,
+				4EFB52E11E76775700ED4DE5 /* FMDatabasePool.h */,
+				4EFB52E21E76775700ED4DE5 /* FMDatabasePool.m */,
+				4EFB52E31E76775700ED4DE5 /* FMDatabaseQueue.h */,
+				4EFB52E41E76775700ED4DE5 /* FMDatabaseQueue.m */,
+				4EFB52E51E76775700ED4DE5 /* FMDB.h */,
+				4EFB52E61E76775700ED4DE5 /* FMResultSet.h */,
+				4EFB52E71E76775700ED4DE5 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		4EFB52F31E767A6A00ED4DE5 /* HPCacheService */ = {
+			isa = PBXGroup;
+			children = (
+				4EFB52F41E768E3F00ED4DE5 /* HPCacheService.h */,
+				4EFB52F51E768E3F00ED4DE5 /* HPCacheService.m */,
+			);
+			path = HPCacheService;
+			sourceTree = "<group>";
+		};
 		B7D164DD79E0B15F4AB0AD6E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,8 +196,10 @@
 		C48074EC1E6FDE2700DEAFE5 /* hopeTest */ = {
 			isa = PBXGroup;
 			children = (
+				4EFB52F31E767A6A00ED4DE5 /* HPCacheService */,
 				C48075231E6FF7C900DEAFE5 /* HPAPIRequestList */,
 				C48075241E6FF7C900DEAFE5 /* HPHttpService */,
+				4EFB52DB1E76775700ED4DE5 /* openSource */,
 				C48074F01E6FDE2700DEAFE5 /* AppDelegate.h */,
 				C48074F11E6FDE2700DEAFE5 /* AppDelegate.m */,
 				C48074F31E6FDE2700DEAFE5 /* ViewController.h */,
@@ -199,6 +263,7 @@
 		F85D2378DC088E6F9C7C5324 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4EFB52F01E7679A100ED4DE5 /* libsqlite3.0.tbd */,
 				B338AE5011453501BED558B8 /* libPods-hopeTest.a */,
 			);
 			name = Frameworks;
@@ -391,11 +456,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C48074F51E6FDE2700DEAFE5 /* ViewController.m in Sources */,
+				4EFB52F61E768E3F00ED4DE5 /* HPCacheService.m in Sources */,
 				C48074F21E6FDE2700DEAFE5 /* AppDelegate.m in Sources */,
 				C41A48851E727ECF00ACE211 /* HPUserDataRequest.m in Sources */,
+				4EFB52EA1E76775700ED4DE5 /* FMDatabase.m in Sources */,
+				4EFB52EF1E76775700ED4DE5 /* YTKKeyValueStore.m in Sources */,
+				4EFB52EC1E76775700ED4DE5 /* FMDatabasePool.m in Sources */,
+				4EFB52ED1E76775700ED4DE5 /* FMDatabaseQueue.m in Sources */,
 				C48075271E700E8700DEAFE5 /* HPError.m in Sources */,
 				C480752A1E7010AF00DEAFE5 /* HPHttpService.m in Sources */,
+				4EFB52EE1E76775700ED4DE5 /* FMResultSet.m in Sources */,
 				C48074EF1E6FDE2700DEAFE5 /* main.m in Sources */,
+				4EFB52EB1E76775700ED4DE5 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
