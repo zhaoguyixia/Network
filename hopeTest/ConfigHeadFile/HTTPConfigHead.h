@@ -10,7 +10,7 @@
 #define HTTPConfigHead_h
 
 /*服务器地址*/
-#define BASE_URL @"http://api.wantexe.com/v1/"
+#define BASE_URL @""
 
 /*请求超时时间*/
 #define REQUEST_OUTTIME 3

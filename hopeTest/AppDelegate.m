@@ -17,7 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[HPHttpService shareManager] uploadFileWithContentUrl:@"exercise/uploadExerciseData" withParam:nil withFilePath:ABSOLUTE_PATH(@"photo.zip") withProgress:^(CGFloat progress) {
+    NSString *url = @"";
+    [[HPHttpService shareManager] uploadFileWithContentUrl:url withParam:nil withFilePath:ABSOLUTE_PATH(@"photo.zip") withProgress:^(CGFloat progress) {
         NSLog(@"%g", progress);
     } withSuccess:^(NSURLSessionDataTask *task, id model, HPError *hpError) {
         NSLog(@"%@", model);
