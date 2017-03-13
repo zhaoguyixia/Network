@@ -1,0 +1,25 @@
+//
+//  hope_prefix.pch
+//  hopeTest
+//
+//  Created by wantexe on 17/3/8.
+//  Copyright © 2017年 limingfeng. All rights reserved.
+//
+
+#ifndef hope_prefix_pch
+#define hope_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+//头文件
+#import "AFNetworking.h"
+
+#import "HTTPConfigHead.h"
+#import "HPHttpService.h"
+
+#endif
+
+#endif /* hope_prefix_pch */

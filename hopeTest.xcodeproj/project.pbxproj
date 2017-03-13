@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EB0867D42D4539CE423B4FD /* libPods-hopeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B338AE5011453501BED558B8 /* libPods-hopeTest.a */; };
+		C41A48851E727ECF00ACE211 /* HPUserDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C41A48841E727ECF00ACE211 /* HPUserDataRequest.m */; };
+		C48074EF1E6FDE2700DEAFE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C48074EE1E6FDE2700DEAFE5 /* main.m */; };
+		C48074F21E6FDE2700DEAFE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C48074F11E6FDE2700DEAFE5 /* AppDelegate.m */; };
+		C48074F51E6FDE2700DEAFE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C48074F41E6FDE2700DEAFE5 /* ViewController.m */; };
+		C48074F81E6FDE2700DEAFE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48074F61E6FDE2700DEAFE5 /* Main.storyboard */; };
+		C48074FA1E6FDE2700DEAFE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48074F91E6FDE2700DEAFE5 /* Assets.xcassets */; };
+		C48075081E6FDE2700DEAFE5 /* hopeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C48075071E6FDE2700DEAFE5 /* hopeTestTests.m */; };
+		C48075131E6FDE2700DEAFE5 /* hopeTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C48075121E6FDE2700DEAFE5 /* hopeTestUITests.m */; };
+		C48075271E700E8700DEAFE5 /* HPError.m in Sources */ = {isa = PBXBuildFile; fileRef = C48075261E700E8700DEAFE5 /* HPError.m */; };
+		C480752A1E7010AF00DEAFE5 /* HPHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = C48075291E7010AF00DEAFE5 /* HPHttpService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C48075041E6FDE2700DEAFE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C48074E21E6FDE2700DEAFE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C48074E91E6FDE2700DEAFE5;
+			remoteInfo = hopeTest;
+		};
+		C480750F1E6FDE2700DEAFE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C48074E21E6FDE2700DEAFE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C48074E91E6FDE2700DEAFE5;
+			remoteInfo = hopeTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		453222F99FC193A914ED699B /* Pods-hopeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hopeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hopeTest/Pods-hopeTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B338AE5011453501BED558B8 /* libPods-hopeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hopeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40E22D21E70F2FD00EE5BF4 /* HTTPConfigHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConfigHead.h; sourceTree = "<group>"; };
+		C41A48831E727ECF00ACE211 /* HPUserDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPUserDataRequest.h; sourceTree = "<group>"; };
+		C41A48841E727ECF00ACE211 /* HPUserDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPUserDataRequest.m; sourceTree = "<group>"; };
+		C48074EA1E6FDE2700DEAFE5 /* hopeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hopeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48074EE1E6FDE2700DEAFE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C48074F01E6FDE2700DEAFE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C48074F11E6FDE2700DEAFE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C48074F31E6FDE2700DEAFE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C48074F41E6FDE2700DEAFE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C48074F71E6FDE2700DEAFE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C48074F91E6FDE2700DEAFE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C48074FE1E6FDE2700DEAFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48075031E6FDE2700DEAFE5 /* hopeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hopeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48075071E6FDE2700DEAFE5 /* hopeTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hopeTestTests.m; sourceTree = "<group>"; };
+		C48075091E6FDE2700DEAFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C480750E1E6FDE2700DEAFE5 /* hopeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hopeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48075121E6FDE2700DEAFE5 /* hopeTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hopeTestUITests.m; sourceTree = "<group>"; };
+		C48075141E6FDE2700DEAFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48075221E6FF0D900DEAFE5 /* hope_prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hope_prefix.pch; sourceTree = "<group>"; };
+		C48075251E700E8700DEAFE5 /* HPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPError.h; sourceTree = "<group>"; };
+		C48075261E700E8700DEAFE5 /* HPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPError.m; sourceTree = "<group>"; };
+		C48075281E7010AF00DEAFE5 /* HPHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPHttpService.h; sourceTree = "<group>"; };
+		C48075291E7010AF00DEAFE5 /* HPHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPHttpService.m; sourceTree = "<group>"; };
+		E791334F30C085808962B458 /* Pods-hopeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hopeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-hopeTest/Pods-hopeTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C48074E71E6FDE2700DEAFE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB0867D42D4539CE423B4FD /* libPods-hopeTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C48075001E6FDE2700DEAFE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C480750B1E6FDE2700DEAFE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7D164DD79E0B15F4AB0AD6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				453222F99FC193A914ED699B /* Pods-hopeTest.debug.xcconfig */,
+				E791334F30C085808962B458 /* Pods-hopeTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C40E22D11E70F2C600EE5BF4 /* ConfigHeadFile */ = {
+			isa = PBXGroup;
+			children = (
+				C40E22D21E70F2FD00EE5BF4 /* HTTPConfigHead.h */,
+			);
+			path = ConfigHeadFile;
+			sourceTree = "<group>";
+		};
+		C48074E11E6FDE2700DEAFE5 = {
+			isa = PBXGroup;
+			children = (
+				C48074EC1E6FDE2700DEAFE5 /* hopeTest */,
+				C48075061E6FDE2700DEAFE5 /* hopeTestTests */,
+				C48075111E6FDE2700DEAFE5 /* hopeTestUITests */,
+				C48074EB1E6FDE2700DEAFE5 /* Products */,
+				B7D164DD79E0B15F4AB0AD6E /* Pods */,
+				F85D2378DC088E6F9C7C5324 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C48074EB1E6FDE2700DEAFE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C48074EA1E6FDE2700DEAFE5 /* hopeTest.app */,
+				C48075031E6FDE2700DEAFE5 /* hopeTestTests.xctest */,
+				C480750E1E6FDE2700DEAFE5 /* hopeTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C48074EC1E6FDE2700DEAFE5 /* hopeTest */ = {
+			isa = PBXGroup;
+			children = (
+				C48075231E6FF7C900DEAFE5 /* HPAPIRequestList */,
+				C48075241E6FF7C900DEAFE5 /* HPHttpService */,
+				C48074F01E6FDE2700DEAFE5 /* AppDelegate.h */,
+				C48074F11E6FDE2700DEAFE5 /* AppDelegate.m */,
+				C48074F31E6FDE2700DEAFE5 /* ViewController.h */,
+				C48074F41E6FDE2700DEAFE5 /* ViewController.m */,
+				C48074F61E6FDE2700DEAFE5 /* Main.storyboard */,
+				C48074F91E6FDE2700DEAFE5 /* Assets.xcassets */,
+				C48074FE1E6FDE2700DEAFE5 /* Info.plist */,
+				C48074ED1E6FDE2700DEAFE5 /* Supporting Files */,
+			);
+			path = hopeTest;
+			sourceTree = "<group>";
+		};
+		C48074ED1E6FDE2700DEAFE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C40E22D11E70F2C600EE5BF4 /* ConfigHeadFile */,
+				C48074EE1E6FDE2700DEAFE5 /* main.m */,
+				C48075221E6FF0D900DEAFE5 /* hope_prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C48075061E6FDE2700DEAFE5 /* hopeTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				C48075071E6FDE2700DEAFE5 /* hopeTestTests.m */,
+				C48075091E6FDE2700DEAFE5 /* Info.plist */,
+			);
+			path = hopeTestTests;
+			sourceTree = "<group>";
+		};
+		C48075111E6FDE2700DEAFE5 /* hopeTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C48075121E6FDE2700DEAFE5 /* hopeTestUITests.m */,
+				C48075141E6FDE2700DEAFE5 /* Info.plist */,
+			);
+			path = hopeTestUITests;
+			sourceTree = "<group>";
+		};
+		C48075231E6FF7C900DEAFE5 /* HPAPIRequestList */ = {
+			isa = PBXGroup;
+			children = (
+				C41A48831E727ECF00ACE211 /* HPUserDataRequest.h */,
+				C41A48841E727ECF00ACE211 /* HPUserDataRequest.m */,
+			);
+			path = HPAPIRequestList;
+			sourceTree = "<group>";
+		};
+		C48075241E6FF7C900DEAFE5 /* HPHttpService */ = {
+			isa = PBXGroup;
+			children = (
+				C48075251E700E8700DEAFE5 /* HPError.h */,
+				C48075261E700E8700DEAFE5 /* HPError.m */,
+				C48075281E7010AF00DEAFE5 /* HPHttpService.h */,
+				C48075291E7010AF00DEAFE5 /* HPHttpService.m */,
+			);
+			path = HPHttpService;
+			sourceTree = "<group>";
+		};
+		F85D2378DC088E6F9C7C5324 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B338AE5011453501BED558B8 /* libPods-hopeTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C48074E91E6FDE2700DEAFE5 /* hopeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C48075171E6FDE2700DEAFE5 /* Build configuration list for PBXNativeTarget "hopeTest" */;
+			buildPhases = (
+				8864123189A9F1A08E22AC1E /* [CP] Check Pods Manifest.lock */,
+				C48074E61E6FDE2700DEAFE5 /* Sources */,
+				C48074E71E6FDE2700DEAFE5 /* Frameworks */,
+				C48074E81E6FDE2700DEAFE5 /* Resources */,
+				CDC7D31B4878E3E056E0BA1F /* [CP] Embed Pods Frameworks */,
+				8152BB8F947706617BA898F0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hopeTest;
+			productName = hopeTest;
+			productReference = C48074EA1E6FDE2700DEAFE5 /* hopeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C48075021E6FDE2700DEAFE5 /* hopeTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C480751A1E6FDE2700DEAFE5 /* Build configuration list for PBXNativeTarget "hopeTestTests" */;
+			buildPhases = (
+				C48074FF1E6FDE2700DEAFE5 /* Sources */,
+				C48075001E6FDE2700DEAFE5 /* Frameworks */,
+				C48075011E6FDE2700DEAFE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C48075051E6FDE2700DEAFE5 /* PBXTargetDependency */,
+			);
+			name = hopeTestTests;
+			productName = hopeTestTests;
+			productReference = C48075031E6FDE2700DEAFE5 /* hopeTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C480750D1E6FDE2700DEAFE5 /* hopeTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C480751D1E6FDE2700DEAFE5 /* Build configuration list for PBXNativeTarget "hopeTestUITests" */;
+			buildPhases = (
+				C480750A1E6FDE2700DEAFE5 /* Sources */,
+				C480750B1E6FDE2700DEAFE5 /* Frameworks */,
+				C480750C1E6FDE2700DEAFE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C48075101E6FDE2700DEAFE5 /* PBXTargetDependency */,
+			);
+			name = hopeTestUITests;
+			productName = hopeTestUITests;
+			productReference = C480750E1E6FDE2700DEAFE5 /* hopeTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C48074E21E6FDE2700DEAFE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = limingfeng;
+				TargetAttributes = {
+					C48074E91E6FDE2700DEAFE5 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Z69NPXG9H5;
+						ProvisioningStyle = Automatic;
+					};
+					C48075021E6FDE2700DEAFE5 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Z69NPXG9H5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C48074E91E6FDE2700DEAFE5;
+					};
+					C480750D1E6FDE2700DEAFE5 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Z69NPXG9H5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C48074E91E6FDE2700DEAFE5;
+					};
+				};
+			};
+			buildConfigurationList = C48074E51E6FDE2700DEAFE5 /* Build configuration list for PBXProject "hopeTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C48074E11E6FDE2700DEAFE5;
+			productRefGroup = C48074EB1E6FDE2700DEAFE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C48074E91E6FDE2700DEAFE5 /* hopeTest */,
+				C48075021E6FDE2700DEAFE5 /* hopeTestTests */,
+				C480750D1E6FDE2700DEAFE5 /* hopeTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C48074E81E6FDE2700DEAFE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48074FA1E6FDE2700DEAFE5 /* Assets.xcassets in Resources */,
+				C48074F81E6FDE2700DEAFE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C48075011E6FDE2700DEAFE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C480750C1E6FDE2700DEAFE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8152BB8F947706617BA898F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hopeTest/Pods-hopeTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8864123189A9F1A08E22AC1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDC7D31B4878E3E056E0BA1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hopeTest/Pods-hopeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C48074E61E6FDE2700DEAFE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48074F51E6FDE2700DEAFE5 /* ViewController.m in Sources */,
+				C48074F21E6FDE2700DEAFE5 /* AppDelegate.m in Sources */,
+				C41A48851E727ECF00ACE211 /* HPUserDataRequest.m in Sources */,
+				C48075271E700E8700DEAFE5 /* HPError.m in Sources */,
+				C480752A1E7010AF00DEAFE5 /* HPHttpService.m in Sources */,
+				C48074EF1E6FDE2700DEAFE5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C48074FF1E6FDE2700DEAFE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48075081E6FDE2700DEAFE5 /* hopeTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C480750A1E6FDE2700DEAFE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48075131E6FDE2700DEAFE5 /* hopeTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C48075051E6FDE2700DEAFE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C48074E91E6FDE2700DEAFE5 /* hopeTest */;
+			targetProxy = C48075041E6FDE2700DEAFE5 /* PBXContainerItemProxy */;
+		};
+		C48075101E6FDE2700DEAFE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C48074E91E6FDE2700DEAFE5 /* hopeTest */;
+			targetProxy = C480750F1E6FDE2700DEAFE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C48074F61E6FDE2700DEAFE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C48074F71E6FDE2700DEAFE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C48075151E6FDE2700DEAFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C48075161E6FDE2700DEAFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C48075181E6FDE2700DEAFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453222F99FC193A914ED699B /* Pods-hopeTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z69NPXG9H5;
+				GCC_PREFIX_HEADER = hopeTest/hope_prefix.pch;
+				INFOPLIST_FILE = hopeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wantexe.hopeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C48075191E6FDE2700DEAFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E791334F30C085808962B458 /* Pods-hopeTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z69NPXG9H5;
+				GCC_PREFIX_HEADER = hopeTest/hope_prefix.pch;
+				INFOPLIST_FILE = hopeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wantexe.hopeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C480751B1E6FDE2700DEAFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z69NPXG9H5;
+				INFOPLIST_FILE = hopeTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wantexe.hopeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hopeTest.app/hopeTest";
+			};
+			name = Debug;
+		};
+		C480751C1E6FDE2700DEAFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z69NPXG9H5;
+				INFOPLIST_FILE = hopeTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wantexe.hopeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hopeTest.app/hopeTest";
+			};
+			name = Release;
+		};
+		C480751E1E6FDE2700DEAFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Z69NPXG9H5;
+				INFOPLIST_FILE = hopeTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wantexe.hopeTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = hopeTest;
+			};
+			name = Debug;
+		};
+		C480751F1E6FDE2700DEAFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Z69NPXG9H5;
+				INFOPLIST_FILE = hopeTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wantexe.hopeTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = hopeTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C48074E51E6FDE2700DEAFE5 /* Build configuration list for PBXProject "hopeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C48075151E6FDE2700DEAFE5 /* Debug */,
+				C48075161E6FDE2700DEAFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C48075171E6FDE2700DEAFE5 /* Build configuration list for PBXNativeTarget "hopeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C48075181E6FDE2700DEAFE5 /* Debug */,
+				C48075191E6FDE2700DEAFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C480751A1E6FDE2700DEAFE5 /* Build configuration list for PBXNativeTarget "hopeTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C480751B1E6FDE2700DEAFE5 /* Debug */,
+				C480751C1E6FDE2700DEAFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C480751D1E6FDE2700DEAFE5 /* Build configuration list for PBXNativeTarget "hopeTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C480751E1E6FDE2700DEAFE5 /* Debug */,
+				C480751F1E6FDE2700DEAFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C48074E21E6FDE2700DEAFE5 /* Project object */;
+}
