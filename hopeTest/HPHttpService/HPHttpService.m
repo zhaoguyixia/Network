@@ -49,8 +49,8 @@ static HPHttpService *_httpService;
         response.removesKeysWithNullValues = YES;
         _manager.responseSerializer = response;
         
-        /**set request content type,application/json tells service please send json data,and application/xml tells service send XML data*/
-        [_manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        /**set type of send to service, here you should not set it, */
+//        [_manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         
         /**set content type which response from service*/
         [_manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObjects:@"text/plain",@"application/json",@"text/json",@"text/javascript",@"text/html", nil]];
